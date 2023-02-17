@@ -1,4 +1,4 @@
-# installer
+## README
 Structure for install should be in c:\temp\
 
 * ├── install.bat 
@@ -7,7 +7,7 @@ Structure for install should be in c:\temp\
   * ├── install.ps1
   * └── uninstall.ps1
 
-Windows features to enable/disable
+# Windows features to enable/disable
 1. IIS-ManagementConsole
 2. IIS-ASPNET 
 3. IIS-ASPNET45
