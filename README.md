@@ -1,11 +1,11 @@
 # installer
 Structure for install should be in c:\temp\
 
-├── install.bat
-├── uninstall.bat
-├── scripts
-│   ├── install.ps1
-│   └── uninstall.ps1
+* ├── install.bat 
+* ├── uninstall.bat
+* ├── scripts
+  * ├── install.ps1
+  * └── uninstall.ps1
 
 Windows features to enable/disable
 1. IIS-ManagementConsole
