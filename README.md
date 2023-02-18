@@ -15,6 +15,7 @@ Structure for install should be in c:\temp\
 5. IIS-ISAPIExtensions
 6. IIS-NetFxExtensibility
 7. IIS-NetFxExtensibility45
+8. NetFx3
 
 # install.bat
 installs/enables windows features
