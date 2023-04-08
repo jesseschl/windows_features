@@ -20,6 +20,15 @@ foreach ($feature in $features){
 Write-Host ''
 Write-Host 'Disable complete'
 
+# Uninstall website
+Remove-IISSite -Name "Sea Sharp"
+
+# Remove IIS folders and files
+Remove-Item -LiteralPath "C:\ironpub" -Force -Recurse
+
+# Reboot
+Restart-Computer -Force
+
 # If running in the console, wait for input before closing.
 if ($Host.Name -eq "ConsoleHost")
 {
