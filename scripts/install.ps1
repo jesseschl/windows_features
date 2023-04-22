@@ -36,6 +36,9 @@ Copy-Item C:\temp\data\inetpub-2\* C:\inetpub\wwwroot\bin
 Copy-Item C:\temp\data\ironpub-1\* C:\ironpub\wwwroot\
 Copy-Item C:\temp\data\ironpub-2\bin C:\ironpub\wwwroot\ -Recurse
 
+# Open up port for SeaSharp
+New-NetFirewallRule -DisplayName 'SeaSharp' -Profile 'Private' -Direction Inbound -Action Allow -Protocol TCP -LocalPort 28960
+
 # If running in the console, wait for input before closing.
 if ($Host.Name -eq "ConsoleHost")
 {

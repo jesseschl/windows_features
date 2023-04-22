@@ -26,6 +26,9 @@ Remove-IISSite -Name "Sea Sharp"
 # Remove IIS folders and files
 Remove-Item -LiteralPath "C:\ironpub" -Force -Recurse
 
+# Close opened port
+Remove-NetFirewallRule -DisplayName "SeaSharp"
+
 # Reboot
 Restart-Computer -Force
 
